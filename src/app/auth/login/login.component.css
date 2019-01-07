@@ -1,0 +1,12 @@
+.login {
+  width: 300px;
+  margin:  64px auto 0;
+}
+
+.login__btn {
+  margin-top: 24px;
+}
+
+.login__spinner {
+  margin: 0 auto;
+}

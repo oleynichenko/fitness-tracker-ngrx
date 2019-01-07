@@ -1,0 +1,25 @@
+.header__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header__logo:hover,
+.header__link:hover,
+.header__link:active {
+  color: lightgray;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: white;
+}
+

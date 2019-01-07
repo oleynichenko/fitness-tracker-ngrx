@@ -1,0 +1,12 @@
+.signup {
+  width: 300px;
+  margin:  64px auto 0;
+}
+
+.signup__btn {
+  margin-top: 24px;
+}
+
+.signup__spinner {
+  margin: 0 auto;
+}
