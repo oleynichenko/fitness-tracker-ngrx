@@ -5,6 +5,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {StoreModule} from '@ngrx/store';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
@@ -17,6 +18,7 @@ import {TrainingService} from './training/training.service';
 import {environment} from '../environments/environment';
 import {UiService} from './shared/ui.service';
 import {AuthModule} from './auth/auth.module';
+import {reducers} from './app.reducer'
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import {AuthModule} from './auth/auth.module';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    StoreModule.forRoot(reducers)
   ],
   providers: [AuthService, TrainingService, UiService],
   bootstrap: [AppComponent],

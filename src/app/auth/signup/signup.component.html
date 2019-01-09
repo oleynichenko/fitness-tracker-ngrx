@@ -43,13 +43,13 @@
                   ngModel>
       Terms Policy</mat-checkbox>
     <button class="signup__btn"
-            *ngIf="!isLoading"
+            *ngIf="!(isLoading$ | async)"
             mat-raised-button
             type="submit"
             color="primary"
             [disabled]="f.invalid">
       Sign Up</button>
-    <mat-spinner *ngIf="isLoading"
+    <mat-spinner *ngIf="isLoading$ | async"
                  class="signup__spinner">
     </mat-spinner>
   </form>
